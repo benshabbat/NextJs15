@@ -4,10 +4,10 @@ const page = () => {
   return (
     <div>
         <ul>
-            <li><Link href="dashoard/users/1">User 1 </Link> </li>
-            <li><Link href="dashoard/users/2">User 2 </Link> </li>
-            <li><Link href="dashoard/users/3">User 3 </Link> </li>
-            <li><Link href="dashoard/users/4">User 4 </Link> </li>
+            <li><Link href="users/1">User 1 </Link> </li>
+            <li><Link href="users/2">User 2 </Link> </li>
+            <li><Link href="users/3">User 3 </Link> </li>
+            <li><Link href="users/4">User 4 </Link> </li>
         </ul>
     </div>
   )
