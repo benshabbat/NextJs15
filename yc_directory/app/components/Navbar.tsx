@@ -16,15 +16,15 @@ const Navbar = async () => {
               <Link href="/startup/create">
                 <span>create</span>
               </Link>
-            <form
-              action={async () => {
-                "use server";
-                await signOut();
-              }}
-              className="text-gray-600 hover:text-gray-900"
-            >
-              <button type="submit">Logout</button>
-            </form>
+              <form
+                action={async () => {
+                  "use server";
+                  await signOut({ redirectTo: "/" });
+                }}
+                className="text-gray-600 hover:text-gray-900"
+              >
+                <button type="submit">Logout</button>
+              </form>
               <Link href={`/user/${session?.user?.id}`}>
                 <span className="text-gray-600 hover:text-gray-900">
                   {session?.user?.name}
